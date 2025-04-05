@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import MyButton from "./UI/Button/MyButton";
 import { motion, AnimatePresence } from "motion/react";
-import { anticipate } from "motion";
 
 const PostItem = (props) => {
 
