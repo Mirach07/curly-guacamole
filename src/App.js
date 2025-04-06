@@ -6,8 +6,8 @@ import PostFilter from "./components/PostFilter";
 import MyModal from "./components/UI/Modal/MyModal";
 import MyButton from "./components/UI/Button/MyButton";
 import { usePosts } from "./hooks/usePosts";
-import axios from "axios";
 import PostService from "./API/PostService";
+import MyLoader from "./components/UI/Loader/MyLoader";
 
 
 function App() {
@@ -63,7 +63,7 @@ function App() {
         />
 
       {isPostsLoading
-        ? <h1 style={{textAlign: "center"}}>Загрузка...</h1>
+        ? <MyLoader/>
         : <PostList remove = {removePost} posts = {sortedAndSearchedPosts} title = "Список постов 1"/>
       }
       
