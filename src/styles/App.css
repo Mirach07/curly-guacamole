@@ -21,10 +21,39 @@
     padding: 15px;
     border: 2px solid purple;
     margin-top: 15px;
-
-    
 }
 
 .post__header {
     text-align: center;
+}
+
+.page__wrapper {
+    margin: 10px 0;
+
+    display: flex;
+    justify-content: end;
+}
+
+.page {
+    width: 30px;
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 1px;
+
+    background-color: pink;
+    color: purple;
+    border: 2px solid purple;
+
+    cursor: pointer;
+}
+
+.page__current {
+    font-weight: 700;
+
+    border: 3px solid purple;
+    background-color: rgb(255, 170, 185);
 }
